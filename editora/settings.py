@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-&6!60n5-(f%ws_)f=q33*!(+kau&e_n#t@tjn16k_)jqww9kh5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['tecweb-projeto-exemplo-fork.onrender.com', 'localhost', '127.0.0.1', '0.0.0.0']
 
 
 # Application definition
@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'editora.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='',
+        default='postgresql://exemplo_livro_7a64_user:md3rqGkvFK2ma1LWbtAhaMnvJglipe6Q@dpg-crcoq7bv2p9s73ck2he0-a.oregon-postgres.render.com/exemplo_livro_7a64',
         conn_max_age=600,
         ssl_require=not DEBUG
     )
